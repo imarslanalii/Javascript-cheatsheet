@@ -81,8 +81,79 @@ for(let i = 0; i < 5; i++){
     console.log(i)
 }
 
-let i = 0
-while(i < 10) {
-    console.log (i);
-    i++ ; 
+// let i = 0
+// while(i < 10) {
+//     console.log (i);
+//     i++ ; 
+// }
+
+// conditionals 
+// const a = 10
+
+// if (a == 10) {
+//     console.log('a is 10')
+// } else if (a > 30){
+//     console.log('a is greater than 10')
+// } else {
+//     console.log('a is less than 10')
+// }
+
+// const a = 11;
+// const color = a > 10 ? 'red' : 'biue'
+
+// switch(color) {
+//     case 'red':
+//         console.log('color is red');
+//         break;
+//     case 'biue':
+//         console.log('color is blue')
+//         break
+//     default:
+//         console.log('color is not red or blue')
+
+// }
+
+// function 
+
+// function addnum(num1 = 1, num2 = 1) {
+//     return(num1 + num2)
+// }
+// console.log(addnum(4, 5))
+
+// destructor function 
+
+// function prson (firstName, lastName, dob) {
+//     this.firstName = firstName
+//     this.lastNamae = lastName
+//     this.dob = new Date(dob)
+//     this.getBirthYear = function() {
+//         return this.dob.getFullYear()
+//     }
+//     this.getFullName = function (){
+//         return `${this.firstName} ${this.lastNamae}`
+//     }
+// }
+
+
+//  class 
+class prson {
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName
+        this.lastNamae = lastName
+        this.dob = new Date(dob)
+    }
+
+    getBirthYear = function() {
+        return this.dob.getFullYear()
+     }
+
+     getFullName = function (){
+        return `${this.firstName} ${this.lastNamae}`
+     }
 }
+
+// Object
+
+const prson1 = new prson ('john', 'Doe', '6.21.2002')
+
+console.log (prson1)
